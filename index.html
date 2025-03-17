@@ -1,130 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #f9fafb; /* Light background color */
-            color: #1f2937; /* Dark text color */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="landing-page">
-        <header class="header bg-white shadow-md">
-            <div class="container header-container flex items-center justify-between px-4 py-6">
-                <div class="logo-container flex items-center">
-                    <a href="/" class="logo-link flex items-center">
-                        <div class="logo-image w-10 h-10 bg-blue-500 rounded-full mr-2"></div>
-                        <span class="brand-name text-lg font-bold">Test-Chat-Bot</span>
-                    </a>
-                </div>
-                <div class="search-container relative">
-                    <svg class="search-icon absolute top-1/2 left-3 transform -translate-y-1/2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <input type="search" placeholder="Search..." class="input search-input pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                </div>
-                <nav class="main-nav space-x-4">
-                    <a href="#features" class="nav-link text-gray-700 hover:text-blue-500">Features</a>
-                    <a href="#pricing" class="nav-link text-gray-700 hover:text-blue-500">Pricing</a>
-                    <a href="#about" class="nav-link text-gray-700 hover:text-blue-500">About</a>
-                    <a href="#contact" class="nav-link text-gray-700 hover:text-blue-500">Contact</a>
-                </nav>
-                <button class="button button-primary button-sm desktop-cta bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600">
-                    Get Started
-                </button>
-                <button class="button button-outline button-icon mobile-search-button bg-white border border-gray-300 text-gray-500 px-4 py-2 rounded-full hover:bg-gray-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                    <span class="sr-only">Search</span>
-                </button>
+  <div class="landing-page">
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo-container">
+          <a href="/" class="logo-link">
+            <div class="logo-image"></div>
+            <span class="brand-name">Test-Chat-Bot</span>
+          </a>
+        </div>
+        <div class="search-container">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="search" placeholder="Search..." class="input search-input">
+        </div>
+        <nav class="main-nav">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button class="button button-primary button-sm desktop-cta">
+          Get Started
+        </button>
+        <button class="button button-outline button-icon mobile-search-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="sr-only">Search</span>
+        </button>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1 class="hero-title">
+                 Esta Es una pagina Creada para probar el chatbot
+                </h1>
+                <p class="hero-description">
+                  Creada por Santiago Ravasi
+                </p>
+              </div>
+              <div class="hero-buttons">
+                <button class="button button-primary button-lg">Get Started</button>
+                <button class="button button-outline button-lg">Learn More</button>
+              </div>
             </div>
-        </header>
-        <main class="main-content">
-            <section class="hero-section bg-gray-100 py-20">
-                <div class="container mx-auto px-4">
-                    <div class="hero-grid grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                        <div class="hero-content">
-                            <div class="hero-text">
-                                <h1 class="hero-title text-4xl font-bold mb-4">
-                                    Esta Es una pagina Creada para probar el chatbot
-                                </h1>
-                                <p class="hero-description text-lg text-gray-600 mb-8">
-                                    Creada por Santiago Ravasi
-                                </p>
-                            </div>
-                            <div class="hero-buttons space-x-4">
-                                <button class="button button-primary button-lg bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600">
-                                    Get Started
-                                </button>
-                                <button class="button button-outline button-lg bg-white border border-gray-300 text-gray-700 px-6 py-3 rounded-full hover:bg-gray-100">
-                                    Learn More
-                                </button>
-                            </div>
-                        </div>
-                        <div class="hero-image">
-                            <img src="https://aunoa.ai/wp-content/uploads/2024/05/tipos-de-chatbots.webp" alt="Tipos de Chatbots" class="w-full h-auto rounded-lg shadow-lg">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>      
-      
-      
-      <section id="contact" class="contact-section">
-        <div class="container contact-container">
-          <div class="contact-header">
-            <h2 class="contact-title">
-              Ready to get started?
-            </h2>
-            <p class="contact-description">
-              Join thousands of satisfied customers today.
-            </p>
-          </div>
-          <div class="contact-form-container">
-            <form class="contact-form">
-              <input type="email" placeholder="Enter your email" class="input contact-input">
-              <button type="submit" class="button button-primary">Subscribe</button>
-            </form>
-            <p class="contact-terms">
-              By subscribing, you agree to our
-              <a href="#" class="terms-link">
-                Terms & Conditions
-              </a>
-            </p>
+            <div class="hero-image"> https://aunoa.ai/wp-content/uploads/2024/05/tipos-de-chatbots.webp </div>
           </div>
         </div>
       </section>
-    </main>
-    <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-logo">
-          <div class="footer-logo-image"></div>
-          <span class="footer-brand">Brand</span>
-        </div>
-        <p class="footer-copyright">
-          &copy; <script>document.write(new Date().getFullYear())</script> Brand, Inc. All rights reserved.
-        </p>
-        <div class="footer-links">
-          <a href="#" class="footer-link">
-            Privacy Policy
-          </a>
-          <a href="#" class="footer-link">
-            Terms of Service
-          </a>
-        </div>
-      </div>
-    </footer>
-  </div>
 
  <script type="text/javascript">
   (function(d, t) {
