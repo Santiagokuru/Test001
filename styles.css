@@ -10,7 +10,7 @@
   --primary-foreground: #f8fafc;
   --secondary: #f1f5f9;
   --secondary-foreground: #0f172a;
-  --muted: #F2B23E;
+  --muted: #285E62;
   --muted-foreground: #64748b;
   --accent: #f1f5f9;
   --accent-foreground: #0f172a;
@@ -369,7 +369,7 @@ button {
   overflow: hidden;
   border-radius: 0.75rem;
   object-fit: cover;
-  background-color: #285E62;
+  background-color: #F2B23E;
 }
 
 @media (min-width: 640px) {
