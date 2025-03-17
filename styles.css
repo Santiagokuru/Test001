@@ -369,7 +369,7 @@ button {
   overflow: hidden;
   border-radius: 0.75rem;
   object-fit: cover;
-  background-color: #f1f5f9;
+  background-color: #F2B23E;
 }
 
 @media (min-width: 640px) {
@@ -675,7 +675,7 @@ button {
   width: 24px;
   height: 24px;
   border-radius: 0.375rem;
-  background-color: #f1f5f9;
+  background-color: #F2B23E;
 }
 
 .footer-brand {
